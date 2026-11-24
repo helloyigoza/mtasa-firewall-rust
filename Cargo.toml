@@ -1,0 +1,17 @@
+[package]
+name = "mtasa-firewall-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+etherparse = "0.17"
+nfq = "0.2"
+nftables = "0.3"
+governor = { version = "0.8", features = ["std", "dashmap"] }
+dashmap = "6"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+tokio = { version = "1", features = ["full"] }
